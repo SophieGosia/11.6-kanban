@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Shrikhand');
+
+$background-color:#DAD6D0;
+$main-color: rgb(243,204,113);
+$additional-color: #F5AA00;
+$bright-text: #efffc8;
+$header-color: rgb(35,37,36);
+$paragraph-font: 'Roboto', sans-serif;
+$header-font: 'Shrikhand', cursive;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $paragraph-font;
+  font-size: 20px;
+  text-align: center;
+  background-color: $background-color;
+  background-size: cover;
+  background-image: url('https://images.unsplash.com/photo-1512950050685-b1d4ae63d2df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fa5f26372f4d2b24c11391c603cecc1e&auto=format&fit=crop&w=1650&q=80');
+}
+
+.board {
+  margin-top: 20vh;
+  h1 {
+    color: $header-color;
+    font-family: $header-font;
+    font-size: 50px;
+  }
+  .create-column {
+    width: 250px;
+    padding: 6px;
+    margin: 25px auto;
+    background-color: $additional-color;
+    border: none;
+    border-radius: 25px;
+    color: $bright-text;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    &:active {
+      background-color: rgb(255, 123, 0);
+      box-shadow: 0 3px rgb(145, 102, 63, );
+      transform: translateY(4px);
+    }
+  }
+}
+
+.column-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  .column {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    padding: 25px;
+    background-color: $main-color;
+    .column-title {
+      text-align: center;
+      color: $header-color;
+      font-weight: 900;
+    }
+    .add-card {
+      margin-top: 10px;
+      text-align: center;
+      color: $bright-text;
+      font-weight: 500;
+      padding: 8px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: $additional-color;
+      border: none;
+      border-radius: 20px;
+    }
+    .btn-delete {
+      float: right;
+      text-align: center;
+      margin: 10px;
+      width: 30px;
+      height: 30px;
+      background-color: $additional-color;
+      border: none;
+      border-radius: 50%;
+      color: $bright-text;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  }
+}
+
+.create-column,
+.column .add-card,
+.column .btn-delete {
+  &:hover {
+    background-color: rgb(255, 123, 0);
+  }
+}
+
+.column-card-list {
+  min-height: 200px;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none;
+  .card {
+    text-align: center;
+    color: #000;
+    margin-top: 20px;
+    .card-description {
+      padding: 15px;
+      background: $bright-text;
+      min-height: 56px;
+      cursor: pointer;
+      font-size: 20px;
+      color: $header-color;
+    }
+  }
+}

@@ -3,8 +3,8 @@
 $background-color:#DAD6D0;
 $main-color: rgb(243,204,113);
 $additional-color: #F5AA00;
-$bright-text: #efffc8;
-$header-color: rgb(35,37,36);
+$bright-tones: #efffc8;
+$dark-tones: rgb(35,37,36);
 $paragraph-font: 'Roboto', sans-serif;
 $header-font: 'Shrikhand', cursive;
 
@@ -26,7 +26,7 @@ body {
 .board {
   margin-top: 20vh;
   h1 {
-    color: $header-color;
+    color: $dark-tones;
     font-family: $header-font;
     font-size: 50px;
   }
@@ -34,13 +34,9 @@ body {
     width: 250px;
     padding: 6px;
     margin: 25px auto;
-    background-color: $additional-color;
-    border: none;
     border-radius: 25px;
-    color: $bright-text;
     font-size: 20px;
     line-height: 40px;
-    cursor: pointer;
     &:active {
       background-color: rgb(255, 123, 0);
       box-shadow: 0 3px rgb(145, 102, 63);
@@ -60,32 +56,22 @@ body {
     background-color: $main-color;
     .column-title {
       text-align: center;
-      color: $header-color;
+      color: $dark-tones;
       font-weight: 900;
     }
     .add-card {
       margin-top: 10px;
-      text-align: center;
-      color: $bright-text;
       font-weight: 500;
       padding: 8px 20px;
       font-size: 14px;
-      cursor: pointer;
-      background-color: $additional-color;
-      border: none;
       border-radius: 20px;
     }
     .btn-delete {
       float: right;
-      text-align: center;
       margin: 10px;
       width: 30px;
       height: 30px;
-      background-color: $additional-color;
-      border: none;
       border-radius: 50%;
-      color: $bright-text;
-      cursor: pointer;
       font-size: 20px;
     }
   }
@@ -94,6 +80,11 @@ body {
 .create-column,
 .column .add-card,
 .column .btn-delete {
+  background-color: $additional-color;
+  color: $bright-tones;
+  border: none;
+  cursor: pointer;
+  text-align: center;
   &:hover {
     background-color: rgb(255, 123, 0);
   }
@@ -111,11 +102,11 @@ body {
     margin-top: 20px;
     .card-description {
       padding: 15px;
-      background: $bright-text;
+      background: $bright-tones;
       min-height: 56px;
       cursor: pointer;
       font-size: 20px;
-      color: $header-color;
+      color: $dark-tones;
     }
   }
 }

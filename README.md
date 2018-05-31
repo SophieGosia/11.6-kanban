@@ -1,5 +1,5 @@
 11.6 - kanban
-https://codepen.io/sophie_gosia/pen/
+https://codepen.io/sophie_gosia/pen/jKEeOB
 
 How to run this project: 
 

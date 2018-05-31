@@ -43,7 +43,7 @@ body {
     cursor: pointer;
     &:active {
       background-color: rgb(255, 123, 0);
-      box-shadow: 0 3px rgb(145, 102, 63, );
+      box-shadow: 0 3px rgb(145, 102, 63);
       transform: translateY(4px);
     }
   }
@@ -118,4 +118,13 @@ body {
       color: $header-color;
     }
   }
+}
+
+footer {
+  font-size: 14px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 0;
+  background-color: none;
+  color: $additional-color;
 }

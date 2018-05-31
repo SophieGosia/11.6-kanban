@@ -117,4 +117,13 @@ body {
   font-size: 20px;
   color: #232524;
 }
+
+footer {
+  font-size: 14px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 0;
+  background-color: none;
+  color: #F5AA00;
+}
 /*# sourceMappingURL=style.css.map */

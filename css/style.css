@@ -28,13 +28,9 @@ body {
   width: 250px;
   padding: 6px;
   margin: 25px auto;
-  background-color: #F5AA00;
-  border: none;
   border-radius: 25px;
-  color: #efffc8;
   font-size: 20px;
   line-height: 40px;
-  cursor: pointer;
 }
 
 .board .create-column:active {
@@ -64,41 +60,41 @@ body {
 
 .column-container .column .add-card {
   margin-top: 10px;
-  text-align: center;
-  color: #efffc8;
   font-weight: 500;
   padding: 8px 20px;
   font-size: 14px;
-  cursor: pointer;
-  background-color: #F5AA00;
-  border: none;
   border-radius: 20px;
 }
 
-.column-container .column .btn-delete {
+.column-container .column .delete {
   float: right;
-  text-align: center;
   margin: 10px;
   width: 30px;
   height: 30px;
-  background-color: #F5AA00;
-  border: none;
   border-radius: 50%;
-  color: #efffc8;
-  cursor: pointer;
   font-size: 20px;
 }
 
-.create-column:hover,
-.column .add-card:hover,
-.column .btn-delete:hover {
+.column-container .column .delete:before {
+  font-family: FontAwesome;
+  content: "\F00D";
+}
+
+.btn {
+  background-color: #F5AA00;
+  color: #efffc8;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
   background-color: #ff7b00;
 }
 
 .column-card-list {
   min-height: 200px;
-  margin: 0;
-  margin-top: 20px;
+  margin: 20px 0 0;
   padding: 0;
   list-style-type: none;
 }
